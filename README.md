@@ -1,6 +1,7 @@
 0000 minimal app
 
 0010 root widget in kv file. kv: Button,Label,Boxlayout
+Check layouts
 
 0012 interactivity in kv file, changing same element
 
@@ -17,3 +18,29 @@
 0038 root.pressed but only in kv file. Check error message!
 
 0039 Creating pressed method in MyWidget class in py file.
+
+00100 Canvas
+http://robertour.com/2013/07/19/10-things-you-should-know-about-the-kivy-canvas/
+
+00110 Canvas is not a widget, it has no size. Canvas is a set of instruction. The Widget itself has a size
+ and the Ellipse also has a default size.
+ 
+00120 Button is also a widget and it has a canvas, you can draw on it...
+
+00130 Botton has no attribute 'r'
+
+00132 MyWidget has no attribute 'r'
+
+00134 It runs, but does nothing fancy. What if Button presses changes color?
+
+00136 When button pressed, circle's color changes
+
+00140 Interactivity with canvas: on_touch_down event
+
+00142 Circle is drown on touch position. Seems to be OK, but not. It positions the whole widget, not the ellipse
+
+00144 A bit better positioning
+
+00150 Clock
+
+00160 Move circle to the touch point

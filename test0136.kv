@@ -1,0 +1,11 @@
+#:kivy 1.0
+
+<MyWidget>:
+    Button:
+        text: "Hello"
+        on_press: self.parent.pressed()
+        canvas:
+            Color:
+                rgba: self.parent.r, 1, 1, 1
+            Ellipse
+
