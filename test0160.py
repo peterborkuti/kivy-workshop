@@ -17,9 +17,19 @@ class MyWidget(Widget):
 
         Clock.schedule_interval(self.move, 0)
 
+    def diff(self):
+        dx = self.goalx - self.cx
+        dy = self.goaly - self.cy
+
+        diffx = 0 if dx == 0 else abs(dx) / dx
+        diffy = 0 if dy == 0 else abs(dy) / dy
+
+        return [diffx, diffy]
+
     def move(self, timer):
-        self.cx += self.goalx - self.cx)random.randint(-1, 1)
-        self.cy += random.randint(-1, 1)
+        m = self.diff()
+        self.cx += m[0]
+        self.cy += m[1]
 
     def on_touch_down(self, touch):
         self.goalx = touch.pos[0]
