@@ -1,9 +1,11 @@
 0000 minimal app
 
 0010 root widget in kv file. kv: Button,Label,Boxlayout
-Check layouts
+Try different layouts :https://kivy.org/docs/gettingstarted/layouts.html
 
 0012 interactivity in kv file, changing same element
+Try different UX widgets: https://kivy.org/docs/api-kivy.uix.html
+Try some of its properties
 
 0020 id in kv file, changing sibling element
 
@@ -18,6 +20,10 @@ Check layouts
 0038 root.pressed but only in kv file. Check error message!
 
 0039 Creating pressed method in MyWidget class in py file.
+Display the value of an input field in a label
+Disable an input field based on a checkbox
+Put a textbox and a label. Display the cursor coordinates in the label.
+Put a textbox. When user hit enter, a popup should come up with the text "Thank you" (0500)
 
 00100 Canvas
 http://robertour.com/2013/07/19/10-things-you-should-know-about-the-kivy-canvas/

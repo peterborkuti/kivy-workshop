@@ -1,0 +1,12 @@
+#:kivy 1.0
+
+<MyWidget>:
+    TextInput:
+        multiline: False
+        focus: True
+        on_text_validate: root.validate(self)
+        text: "Hello World"
+
+
+
+
